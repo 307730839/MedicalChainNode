@@ -27,9 +27,9 @@ public class ManageController {
         return new ModelAndView("manage");
     }
 
-    @RequestMapping(value = "/loading1")
+    @RequestMapping(value = "/loading")
     public ModelAndView loading(HttpServletRequest request, HttpServletResponse response) {
-        return new ModelAndView("loading1");
+        return new ModelAndView("loading");
     }
 
 }

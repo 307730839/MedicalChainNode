@@ -1,0 +1,129 @@
+/**
+  * @name      : tips
+  * @explain   : 操作提示
+  * @type      : 基类
+  * @dependent : 无
+  * @author    : sallybai
+  * @version   : 2.0
+  * @html      :
+
+      <div class="tips">
+        <div class="tips-wrap">
+          <span class="tips-ico"><span class="ico-ok"><!-- 图标 --></span></span>
+          <div class="tips-content">
+            <div class="tips-title">提示标题</div>
+            <div class="tips-line">提示描述</div>
+            <div class="tips-buttons">
+              <a href="#" class="btn-blue"><span>确认</span></a>
+              <a href="#" class="btn-white"><span>取消</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+ */
+.mod-box{font:12px/1.5 Tahoma, Helvetica, Arial, "Microsoft YaHei", SimSun;_font-family:"Microsoft YaHei";}
+.mod-box p,.mod-box h2{margin:0;padding:0;}
+.mod-box .tips .ico-ok,.mod-box .tips .ico-error,.mod-box .tips .ico-info,.mod-box .btn-close,
+.mod-box .mod-btn,.mod-box .mod-btn span,.mod-box .mod-btn:hover,.mod-box .mod-btn:hover span{background-image:url(box_png24.png?v=20151111);_background-image:url(box_png8.png?v=20151111);background-repeat:no-repeat;display:inline-block;_display:inline;*display:inline;zoom:1;}
+.mod-box .tips-ico span{width:36px;height:36px;}
+.mod-box .tips .ico-ok{background-position:0 -136px;}
+.mod-box .tips .ico-info{background-position:-37px -136px;}
+.mod-box .tips .ico-error{background-position:-74px -136px;}
+.mod-box .btn-close{background-position:-2px -174px;width:19px;height:19px;}
+.mod-box .btn-close:hover{background-position:-23px -174px;}
+.mod-box .tips{padding:60px 0 90px;text-align:center;}
+.mod-box .tips-wrap{_display:inline;display:inline-block;*display:inline;zoom:1;padding:0 70px;}
+.mod-box .tips-ico{float:left;position:relative;top:-5px;width:auto;margin-right:11px;text-align:right;}
+.mod-box .tips-ico span{vertical-align:top;}
+.mod-box .tips-content{height:1%;text-align:left;overflow:hidden;}
+.mod-box .tips-title{font-size:18px;color:#333333;}
+.mod-box .tips-line{line-height:24px;color:#666666;}
+
+/**
+  * @name      : mod-box
+  * @explain   : 弹出层
+  * @type      : 基类
+  * @dependent : 无
+  * @author    : sallybai
+  * @version   : 2.0
+  * @html      :
+
+    <div class="mod-box"><!-- 显示/隐藏 ： show/hide -->
+      <div class="box-wrap">
+        <div class="box-inner">
+            <a class="btn-close show" href="#">关闭</a><!-- 显示/隐藏 ： show/hide -->
+            <!-- 普通弹出层 [[ -->
+            <div class="box-title show"><h2>提示</h2></div>
+            <div class="box-main">
+              自定义
+              <div class="box-buttons">
+                <a href="#" class="btn-blue"><span>确认</span></a>
+                <a href="#" class="btn-white"><span>关闭</span></a>
+              </div>
+            </div>
+            <!-- 普通弹出层 ]] -->
+          </div>
+        </div>
+      <div class="box-mask hide"><!--蒙层--></div>
+    </div>
+  */
+.mod-box .box-mask{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%;background-color:#ababab;background:transparent;filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr=#30000000, endColorstr=#30000000);background-color:rgba(0,0,0,0.2);z-index:1000;}
+.mod-box .box-wrap{position:absolute;padding:7px;background-color:#e5e5e5;background:transparent;filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr=#10000000, endColorstr=#10000000);background-color:rgba(0,0,0,0.1);font-size:12px;line-height:1.5;z-index:1001;}
+.mod-box .box-inner{position:relative;overflow:hidden;height:100%;}
+.mod-box .btn-close{position:absolute;z-index:1;right:16px;top:16px;overflow:hidden;text-indent:-99em;text-decoration:none;}
+.mod-box .box-title{position:relative;background-color:#f8f8f8;}
+.mod-box .box-title h2{height:48px;line-height:48px;font-size:16px;font-weight:normal;text-indent:15px;color:#999999;margin:0;}
+.mod-box .box-main{position:relative;background-color:#fff;height:100%;overflow: auto;}
+.mod-box .box-buttons{padding:0 19px 24px 19px;text-align:center;}
+.mod-box .box-iframe{width:100%;height:100%;background-color:#ffffff;}
+
+/*按钮*/
+.mod-box .mod-btn,.mod-box .mod-btn span,.mod-box .mod-btn:hover,.mod-box .mod-btn:hover span{cursor:pointer;height:32px;line-height:32px;font-size:14px;}
+.mod-box .mod-btn,.mod-box .mod-btn:hover{padding-left:2px;text-decoration:none;margin-right:6px;}
+.mod-box .mod-btn span,.mod-box .mod-btn:hover span{padding:0 30px 0 28px;}
+
+.mod-box .ext-btn-white,.mod-box .ext-btn-white:hover{background-color:#f9f9f9;color:#333333;}
+.mod-box .ext-btn-blue,.mod-box .ext-btn-blue:hover{background-color:#629fec;color:#fff;margin-left: 10px;}
+
+.mod-box .ext-btn-white{background-position:0 0;width: 90px;background: none;}
+.mod-box .ext-btn-white span{background-position:right 0;background: none;}
+.mod-box .ext-btn-white:hover{background-position:0 -34px;background: none;}
+.mod-box .ext-btn-white:hover span{background-position:right -34px;background: none;}
+
+.mod-box .ext-btn-blue{background-position:0 -68px;width: 90px;}
+.mod-box .ext-btn-blue span{background-position:right -68px;}
+.mod-box .ext-btn-blue:hover{background-position:0 -102px;}
+.mod-box .ext-btn-blue:hover span{background-position:right -102px;}
+
+
+/* 动画 */
+.box-wrap{
+  -webkit-animation:box-fade-up .2s ease-out;
+  -moz-animation:box-fade-up .2s ease-out;
+  -o-animation:box-fade-up .2s ease-out;
+  animation:box-fade-up .2s ease-out;
+}
+@-webkit-keyframes box-fade-up{
+  0%{-webkit-transform:translateY(20px);opacity:0.4;}
+  100%{-webkit-transform:translateY(0);opacity:1;}
+}
+@-moz-keyframes box-fade-up{
+  0%{-moz-transform:translateY(20px);opacity:0.4;}
+  100%{-moz-transform:translateY(0);opacity:1;}
+}
+@-o-keyframes box-fade-up{
+  0%{-o-transform:translateY(20px);opacity:0.4;}
+  100%{-o-transform:translateY(0);opacity:1;}
+}
+@keyframes box-fade-up{
+  0%{transform:translateY(20px);opacity:0.4;}
+  100%{transform:translateY(0px);opacity:1;}
+}
+
+
+
+/* 加载框 */
+.mod-box .loadbox .loadbox-wrap{position:relative;padding:7px;background:rgba(0,0,0,0.05);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr=#10000000, endColorstr=#10000000);_background-color:#e3e3e3;font-size:12px;line-height:1.5;height:100%;z-index:1001;}
+.mod-box .loadbox .loadbox-main{position:relative;background-color:#fff;padding: 73px 0;text-align: center;}
+.mod-box .loadbox .loadbox-main .loadbox-tips {margin:20px 0 10px; color: #666666;font-size: 20px;}

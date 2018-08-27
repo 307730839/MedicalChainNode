@@ -378,7 +378,7 @@ a { color: #2380f3; }
 .developer .progress-item .item-time { font-size: 20px; color: #888; text-align: center; }
 .developer .progress-bar { width: 1115px; height: 50px; background: url(//mqq-imgcache.gtimg.cn/res/web/open_blockchain/img/developer/progress_bar.png) no-repeat; margin: 0 auto; margin-top: 36px; }
 /* banner 轮播图 */
-.developer .swiper-container {width: 100%;height: 680px;}
+.developer .swiper-container {width: 100%;height: 680px;background: url(/picture/s1.jpg);}
 .developer .swiper-slide {background-position: center;background-size: cover;}
 
 /*登录页 banner 文案*/

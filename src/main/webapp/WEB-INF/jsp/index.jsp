@@ -12,7 +12,6 @@
 
 <div class="mod-header ext-header-ftop">
     <div class="header-main">
-
         <h1 class="mod-logo ext-logo-chain new-logo-header" style="width:300px">
             <a class="nav-title nav-title-link" style="font-size:25px">传染病区块链数据平台<span class="icon-ins" ></span></a>
         </h1>
@@ -32,23 +31,17 @@
         </ul>
     </div>
 </div>
-    <div class="app-content">
+
         <!-- 头图 [[ -->
-        <div class="index-banner" style="background-image: url(/picture/s3.jpg)">
+ <div class="index-banner" >
+     <li>
+         <div class="banner_text_w3layouts" style="margin-left: 150px;margin-right: 150px ;margin-top: 145px ;">
+             <p >传染病防控领域与人类健康息息相关，对数据利用的时效有较高的要求，同时需要不同城市的部门和实验室之间实现数据共享和交互，以及标准化的数据分析流程，区块链打通这些环节提供了可能性。</p>
+         </div>
+     </li>
+ </div>
 
-            <li>
-                <div class="banner_text_w3layouts" style="margin-left: 150px;margin-right: 150px ;margin-top: 145px ;">
-
-                    <p >传染病防控领域与人类健康息息相关，对数据利用的时效有较高的要求，同时需要不同城市的部门和实验室之间实现数据共享和交互，以及标准化的数据分析流程，区块链打通这些环节提供了可能性。</p>
-                </div>
-            </li>
-        </div>
-
-
-
-    </div>
-
-    <div class="app-footer">
+<div class="app-footer">
         <!-- 公共页脚 [[ -->
         <div class="mod-footer">
             <div class="footer-wrap clearfix">
