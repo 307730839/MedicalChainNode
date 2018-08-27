@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+
+
+.tech .s1 .tech-btn {width: 330px;height: 72px;line-height: 72px;text-align: center;font-size: 20px;color: #fff;background: #FF8F35;display: inline-block;margin-top: 5px;}
+.tech .s1 .tech-btn:hover {text-decoration: none;opacity: 0.8;}
+.tech .s1 .btn-line {text-align: center;font-size: 16px;color: #333;}
+
+.tech .s1 {padding-top: 100px;height: 666px}
+
+.tech .s2 {padding: 50px 0 150px;}

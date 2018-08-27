@@ -1,0 +1,86 @@
+{
+  "current_validator": {
+    "ip": "127.0.0.1",
+    "port": 8000
+  },
+  "current_blocker": {
+    "ip": "127.0.0.1",
+    "port": 9000
+  },
+
+  "validators": [
+    {
+      "ip": "127.0.0.1",
+      "port": 8000
+    },
+    {
+      "ip": "127.0.0.1",
+      "port": 8001
+    },
+    {
+      "ip": "127.0.0.1",
+      "port": 8002
+    },
+    {
+      "ip": "127.0.0.1",
+      "port": 8003
+    }
+  ],
+  "blockers": [
+    {
+      "ip": "127.0.0.1",
+      "port": 9000
+    },
+    {
+      "ip": "127.0.0.1",
+      "port": 9001
+    },
+    {
+      "ip": "127.0.0.1",
+      "port": 9002
+    },
+    {
+      "ip": "127.0.0.1",
+      "port": 9003
+    }
+  ],
+
+  "validator_mongodb": [
+    {
+      "ip": "127.0.0.1",
+      "port": 27017
+    },
+    {
+      "ip": "127.0.0.1",
+      "port": 27017
+    },
+    {
+      "ip": "127.0.0.1",
+      "port": 27017
+    },
+    {
+      "ip": "127.0.0.1",
+      "port": 27017
+    }
+  ],
+
+  "rabbitmq": {
+    "userName": "admin",
+    "password": "admin",
+    "ip": "127.0.0.1",
+    "port":5672
+  },
+
+  "mongodb": {
+    "ip": "127.0.0.1",
+    "port": 27017,
+    "database": "BlockChain1"
+  },
+
+  "key_pair": {
+    "pvt_key_file": "D:\\KeyPair\\privateKey.txt",
+    "pub_key_file": "D:\\KeyPair\\publicKey.txt"
+  },
+
+  "run":{"runMod":"test"}
+}

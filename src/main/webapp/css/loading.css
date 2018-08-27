@@ -1,0 +1,25 @@
+/**
+  * @name      : loadbox
+  * @explain   : 加载弹窗
+  * @type      : 基类
+  * @dependent : 无
+  * @author    : tinnocui
+  * @version   : 1.0
+  * @html      :
+
+    <div class="loadbox"><!-- 显示/隐藏 ： show/hide -->
+      <div class="loadbox-wrap">
+        <!-- 普通弹出层 [[ -->
+        <div class="loadbox-main">
+          <div class="ico-wrap"><span class="ico-loading-86"><!--加载图标--></span></div>
+          <p class="loadbox-tips">数据正在加载，请耐心等待...</p>
+          <a class="loadbox-cancle" href="#">取消查询</a>
+        </div>
+        <!-- 普通弹出层 ]] -->
+      </div>
+      <div class="box-mask hide"><!--蒙层--></div>
+    </div>
+  */
+.loadbox .loadbox-wrap{position:relative;padding:7px;background:rgba(0,0,0,0.05);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr=#10000000, endColorstr=#10000000);_background-color:#e3e3e3;font-size:12px;line-height:1.5;height:100%;z-index:1001;}
+.loadbox .loadbox-main{position:relative;background-color:#fff;padding: 73px 0;text-align: center;}
+.loadbox .loadbox-main .loadbox-tips {margin:20px 0 10px; color: #666666;font-size: 20px;}
